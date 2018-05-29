@@ -1,6 +1,6 @@
 <template>
   <div class="hearder">
-    <div class="hearder-return">返回</div>
+    <div class="hearder-return">返回1</div>
     <div class="hearder-input">输入城市/景点/游玩主题</div>
     <div class="hearder-city">三亚</div>
   </div>
