@@ -84,16 +84,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.icons {
+<style lang="scss" scoped>
+.icons /deep/ {
   .swiper-wrapper {
     height: 0;
     padding-bottom: 50%;
   }
 }
-</style>
-
-<style lang="scss" scoped>
 .icon {
   float: left;
   width: 25%;
