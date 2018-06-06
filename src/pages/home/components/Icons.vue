@@ -91,37 +91,40 @@ export default {
     padding-bottom: 50%;
   }
 }
-.icon {
-  float: left;
-  width: 25%;
-  height: 0;
-  padding-bottom: 25%;
-  position: relative;
-  overflow: hidden;
-  .icon-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: .44rem;
-    box-sizing: boder-box;
-    padding: .1rem;
-    img {
-      display: block;
-      margin: 0 auto;
-      height: 100%;
+.icons {
+  margin-top: .1rem;
+  .icon {
+    float: left;
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    position: relative;
+    overflow: hidden;
+    .icon-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: .44rem;
+      box-sizing: boder-box;
+      padding: .1rem;
+      img {
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+      }
     }
-  }
-  p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: .44rem;
-    line-height: .44rem;
-    text-align: center;
-    color: $TextColor;
-    @include textOverflow;
+    p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: .44rem;
+      line-height: .44rem;
+      text-align: center;
+      color: $TextColor;
+      @include textOverflow;
+    }
   }
 }
 </style>
