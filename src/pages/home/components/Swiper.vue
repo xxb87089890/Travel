@@ -40,22 +40,21 @@ export default {
 }
 </script>
 
-<style>
-  .wrapper .swiper-pagination-bullet-active {
-    background: #fff;
-}
-</style>
-
 <style lang="scss" scoped>
-  .wrapper {
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    padding-bottom: 32.58%;
-    // padding-bottom是根据图片的高和宽的比例
-    background: #ccc;
-    .swiper-img {
-      width: 100%;
-    }
+.wrapper /deep/ {
+  .swiper-pagination-bullet-active {
+    background: #fff;
   }
+}
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 32.58%;
+  // padding-bottom是根据图片的高和宽的比例
+  background: #ccc;
+  .swiper-img {
+    width: 100%;
+  }
+}
 </style>
