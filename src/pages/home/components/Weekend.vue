@@ -3,7 +3,7 @@
     <div class="weekend-title">周末去哪儿</div>
     <ul>
       <li class="item"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -24,35 +24,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data: function () {
-    return {
-      recommendList: [{
-        id: '00001',
-        imgUrl: require('@/assets/img/fzby.jpg'),
-        title: '福州必游TOP10',
-        desc: '大美福州，必游之处'
-      }, {
-        id: '00002',
-        imgUrl: require('@/assets/img/tl.jpg'),
-        title: '土楼不能说的秘密',
-        desc: '一座座神秘的建筑，一段段传奇的历史'
-      }, {
-        id: '00003',
-        imgUrl: require('@/assets/img/xhz.jpg'),
-        title: '熊孩子玩乐去哪儿',
-        desc: '这里在向熊孩子们招手'
-      }, {
-        id: '00004',
-        imgUrl: require('@/assets/img/wzxr.jpg'),
-        title: '玩转夏日，戏水福州',
-        desc: '福州给你一个别样清爽夏天'
-      }, {
-        id: '00005',
-        imgUrl: require('@/assets/img/byyfz.jpg'),
-        title: '不一样的福州',
-        desc: '各种嗨皮，各种回忆'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -60,7 +33,6 @@ export default {
 <style lang="scss" scoped>
 .weekend {
   .weekend-title {
-    margin-top: .2rem;
     background: #eee;
     line-height: .8rem;
     text-indent: .2rem;

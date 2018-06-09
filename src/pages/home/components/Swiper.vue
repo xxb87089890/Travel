@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
-      <swiper-slide v-for="item of swiperList" :key="item.id">
-        <img class="swiper-img" :src="item.imgurl"/>
+    <swiper :options="swiperOption" v-if="showSwiper">
+      <swiper-slide v-for="item of list" :key="item.id">
+        <img class="swiper-img" :src="item.imgUrl"/>
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
@@ -12,29 +12,22 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    list: Array
+  },
   data: function () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
-        loop: true
-      },
-      swiperList: [{
-        id: '001',
-        imgurl: require('@/assets/img/meinvyeshou.jpeg')
-        // 在script里面需要加require才能获取图片
-      }, {
-        id: '002',
-        imgurl: require('@/assets/img/guangzhouchanglong.jpeg')
-      }, {
-        id: '003',
-        imgurl: require('@/assets/img/laoyuanzi.jpeg')
-      }, {
-        id: '004',
-        imgurl: require('@/assets/img/wuyishan.jpeg')
-      }, {
-        id: '005',
-        imgurl: require('@/assets/img/xiamenfangte.jpeg')
-      }]
+        loop: true,
+        autoplay: 3000
+      }
+    }
+  },
+  // json传进去默认是空的，所以会页面是最后一张图，所以list.length有数据时在显示
+  computed: {
+    showSwiper () {
+      return this.list.length
     }
   }
 }
@@ -46,6 +39,7 @@ export default {
     background: #fff;
   }
 }
+
 .wrapper {
   overflow: hidden;
   width: 100%;
