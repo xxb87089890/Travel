@@ -31,6 +31,7 @@ export default {
   .item {
     line-height: .44rem;
     text-align: center;
+    color: $bgColor;
   }
 }
 </style>
