@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 .search {
   height: .72rem;
-  padding: 0 .1rem;
+  padding: 0 .2rem;
   background: $bgColor;
   .search-input {
     width: 100%;
