@@ -12,26 +12,17 @@
       <div class="city-list">
         <h3 class="title">热门推荐</h3>
         <div class="item-wrapper">
-          <div class="item" v-for="item of list" :key="item.id">
+          <div class="item" v-for="item of hot" :key="item.id">
             <span>{{item.name}}</span>
           </div>
         </div>
       </div>
-      <div class="city-list">
-        <h3 class="title">A</h3>
+      <div class="city-list" v-for="(item, key) of cities" :key="key">
+        <h3 class="title">{{key}}</h3>
         <div class="item-list">
-          <div class="item">澳门</div>
-          <div class="item">阿里</div>
-          <div class="item">安阳</div>
-          <div class="item">安庆</div>
-          <div class="item">澳门</div>
-          <div class="item">阿里</div>
-          <div class="item">安阳</div>
-          <div class="item">安庆</div>
-          <div class="item">澳门</div>
-          <div class="item">阿里</div>
-          <div class="item">安阳</div>
-          <div class="item">安庆</div>
+          <div class="item" v-for="innerItem of item" :key="innerItem.id">
+            {{innerItem.name}}
+          </div>
         </div>
       </div>
     </div>
@@ -43,7 +34,8 @@ import BScroll from 'better-scroll'
 export default {
   name: 'CityList',
   props: {
-    list: Array
+    hot: Array,
+    cities: Object
   },
   mounted () {
     const wrapper = this.$refs.wrapper
