@@ -1,0 +1,115 @@
+{
+  "ret": true,
+  "data": {
+    "city": "福州",
+    "swiperList": [{
+      "id": "001",
+      "imgUrl": "../../static/img/meinvyeshou.jpeg"
+    }, {
+      "id": "002",
+      "imgUrl": "../../static/img/guangzhouchanglong.jpeg"
+    }, {
+      "id": "003",
+      "imgUrl": "../../static/img/laoyuanzi.jpeg"
+    }, {
+      "id": "004",
+      "imgUrl": "../../static/img/wuyishan.jpeg"
+    }, {
+      "id": "005",
+      "imgUrl": "../../static/img/xiamenfangte.jpeg"
+    }],
+    "iconList": [{
+      "id": "001",
+      "imgUrl": "../../static/img/jdmp.png",
+      "desc": "景点门票"
+    }, {
+      "id": "002",
+      "imgUrl": "../../static/img/sswl.png",
+      "desc": "水上玩乐"
+    }, {
+      "id": "003",
+      "imgUrl": "../../static/img/ylc.png",
+      "desc": "游乐场"
+    }, {
+      "id": "004",
+      "imgUrl": "../../static/img/zrfg.png",
+      "desc": "自然风光"
+    }, {
+      "id": "005",
+      "imgUrl": "../../static/img/yry.png",
+      "desc": "一日游"
+    }, {
+      "id": "006",
+      "imgUrl": "../../static/img/xtx.png",
+      "desc": "侠天下"
+    }, {
+      "id": "007",
+      "imgUrl": "../../static/img/wys.png",
+      "desc": "武夷山"
+    }, {
+      "id": "008",
+      "imgUrl": "../../static/img/hyg.png",
+      "desc": "海洋馆"
+    }, {
+      "id": "009",
+      "imgUrl": "../../static/img/wzga.png",
+      "desc": "玩转贵安"
+    }, {
+      "id": "010",
+      "imgUrl": "../../static/img/qbwl.png",
+      "desc": "全部玩乐"
+    }],
+    "recommendList": [{
+      "id": "00001",
+      "imgUrl": "../../static/img/xtx.jpg",
+      "title" : "中国福建三明侠天下旅游区+侠天下旅游区一日游【赠送旱滑道体验玻璃桥，感恩回馈大放价！】",
+      "score" : "4.2分"
+    }, {
+      "id": "00002",
+      "imgUrl": "../../static/img/hdlfc.jpg",
+      "title" : "厦门环岛路帆船出海体验【扬帆出海，圆您水手梦】",
+      "score" : "4.8分"
+    }, {
+      "id": "00003",
+      "imgUrl": "../../static/img/fzyt.jpg",
+      "title" : "福州永泰天门山套票、含大门票+玻璃天桥+鞋套+玻璃栈道",
+      "score" : "5.4分"
+    }, {
+      "id": "00004",
+      "imgUrl": "../../static/img/xmxdd.jpg",
+      "title" : "福建厦门小嶝岛+赶海抓螃蟹渔民体验+逛历史古村+肉眼看金门一日游【海鲜午餐 亲子优选纯玩小团】",
+      "score" : "4.9分"
+    }, {
+      "id": "00005",
+      "imgUrl": "../../static/img/sddch.jpg",
+      "title" : "福建东山岛出海 东门屿海底探秘红珊瑚/浮潜体验 带你进入蓝色海洋世界",
+      "score" : "5.2分"
+    }],
+    "weekendList" : [{
+      "id": "00001",
+      "imgUrl": "../../static/img/fzby.jpg",
+      "title" : "福州必游TOP10",
+      "desc": "大美福州，必游之处"
+    }, {
+      "id": "00002",
+      "imgUrl": "../../static/img/tl.jpg",
+      "title" : "土楼不能说的秘密",
+      "desc": "一座座神秘的建筑，一段段传奇的历史"
+    }, {
+      "id": "00003",
+      "imgUrl": "../../static/img/xhz.jpg",
+      "title" : "熊孩子玩乐去哪儿",
+      "desc": "这里在向熊孩子们招手"
+    }, {
+      "id": "00004",
+      "imgUrl": "../../static/img/wzxr.jpg",
+      "title" : "玩转夏日，戏水福州",
+      "desc": "福州给你一个别样清爽夏天"
+    }, {
+      "id": "00005",
+      "imgUrl": "../../static/img/byyfz.jpg",
+      "title" : "不一样的福州",
+      "desc": "各种嗨皮，各种回忆"
+    }]
+  }
+}
