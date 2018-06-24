@@ -1,7 +1,6 @@
 {
   "ret": true,
   "data": {
-    "city": "福州",
     "swiperList": [{
       "id": "001",
       "imgUrl": "../../static/img/meinvyeshou.jpeg"
