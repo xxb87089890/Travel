@@ -15,6 +15,7 @@ import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
 import axios from 'axios'
+import { mapState } from 'vuex'
 export default {
   name: 'Home',
   components: {
@@ -26,15 +27,19 @@ export default {
   },
   data () {
     return {
+      lastCity: '',
       swiperList: [],
       iconList: [],
       recommendList: [],
       weekendList: []
     }
   },
+  computed: {
+    ...mapState(['city'])
+  },
   methods: {
     getHomeinfo () {
-      axios.get('/api/index.json')
+      axios.get('/api/index.json?city=' + this.city)
         .then((res) => {
           res = res.data
           if (res.ret && res.data) {
@@ -48,7 +53,17 @@ export default {
     }
   },
   mounted () {
+    // console.log('mounted')
     this.getHomeinfo()
+    this.lastCity = this.city
+  },
+  activated () {
+    // console.log('activated')
+    // 当切换城市的时候会执行这个钩子，如果选择当前城市不会请求ajax，如果切换城市才会在请求
+    if (this.city !== this.lastCity) {
+      this.getHomeinfo()
+      this.lastCity = this.city
+    }
   }
 }
 </script>

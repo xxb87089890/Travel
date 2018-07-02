@@ -11,7 +11,7 @@
       <div class="hearder-city">
         <!-- {{this.$store.state.city}} -->
         <!-- {{this.city}} -->
-        {{this.double}}
+        {{this.city}}
         <span class="iconfont arrow-icon">&#xe64a;</span>
       </div>
     </router-link>
@@ -19,12 +19,11 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 export default {
   name: 'HomeHeader',
   computed: {
-    ...mapState(['city']),
-    ...mapGetters(['double'])
+    ...mapState(['city'])
   }
 }
 </script>
@@ -45,8 +44,8 @@ export default {
   }
   .hearder-input {
     height: .64rem;
-    -webkit-flex: 1;   /* Chrome */
-    -ms-flex: 1;       /* IE 10 */
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     background: #fff;
     color: #ccc;
