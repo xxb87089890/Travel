@@ -44,6 +44,10 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
+    // 因为事件不是绑定在组件上，需要remove事件才不会影响其他的页面
   }
 }
 </script>
