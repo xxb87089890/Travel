@@ -79,10 +79,11 @@ export default {
   text-align: center;
   color: #fff;
   font-size: .32rem;
+  z-index: 2;
   .header-fixed-back {
     position: absolute;
     top: 0;
-    left: 0;
+    left: .2rem;
     width: .64rem;
     float: left;
     text-align: center;
